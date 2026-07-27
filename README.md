@@ -1,6 +1,6 @@
 # -Enterprise-network-using-packet-tracer
 
-Overview
+# Overview
 
 This project demonstrates the design and implementation of a scalable enterprise campus network using Cisco Packet Tracer. The topology is divided into three logical enterprise zones—Access Zone, Core Operations Zone, and Distribution Zone—to emulate a real-world organizational network.
 
@@ -8,7 +8,7 @@ The implementation integrates multiple dynamic routing protocols, centralized ne
 
 The project was designed as a practical implementation of CCNA networking concepts while following enterprise network design principles.
 
-Project Objectives
+# Project Objectives
 Design a scalable enterprise network architecture.
 Implement multiple dynamic routing protocols.
 Provide centralized IP address management.
@@ -18,8 +18,8 @@ Implement access control policies.
 Configure network address translation.
 Demonstrate VPN communication.
 Validate complete end-to-end connectivity.
-Enterprise Architecture
-                           ENTERPRISE NETWORK
+# Enterprise Architecture
+                          ENTERPRISE NETWORK
 
                     +-----------------------------+
                     |        Access Zone          |
@@ -54,17 +54,18 @@ Enterprise Architecture
                     | Remote Office             |
                     +---------------------------+
                            OSPF Routing
-Network Zones
-1. Access Zone
+# Network Zones
+# 1. Access Zone
 
 The Access Zone represents the user-facing portion of the enterprise network where employee workstations connect to departmental routers through Layer-2 switches.
 
-Departments
+Departments :
 Human Resources
 Information Technology
 Training
 Development
-Technologies
+
+Technologies :
 RIP Version 2
 DHCP Relay
 ACL
@@ -75,15 +76,16 @@ Dynamic IP allocation
 Department segmentation
 Gateway services
 
-2. Core Operations Zone
+# 2. Core Operations Zone
 
 The Core Operations Zone acts as the backbone of the enterprise network. It connects all departments and provides high-speed packet forwarding between the Access and Distribution layers.
 
-Departments
+Departments :
 Finance
 Research & Development
 Enterprise Services
-Technologies
+
+Technologies :
 EIGRP
 DHCP Relay
 Static NAT
@@ -91,26 +93,26 @@ Functions
 High-speed routing
 Inter-zone communication
 Centralized services
-3. Distribution Zone
 
+# 3. Distribution Zone
 The Distribution Zone aggregates enterprise services and external connectivity while enforcing security policies.
 
-Departments :
+# Departments :
 Sales & Marketing
 Supply Chain
 Remote Operations
 
-Technologies :
+# Technologies :
 OSPF
 NAT
 ACL
 
-Functions :
+# Functions :
 Policy enforcement
 Enterprise applications
 WAN connectivity
 
-Network Devices :
+# Network Devices :
 | Device              |               Quantity |
 | ------------------- | ---------------------: |
 | Cisco 2811 Routers  |                     12 |
@@ -167,48 +169,44 @@ Sales Router
 Supply Chain Router
 Remote Operations Router
 
-**DHCP Relay :
+# DHCP Relay :
 Instead of deploying a DHCP server in every subnet, centralized DHCP servers provide IP address allocation.
 Routers forward DHCP requests using:
 ip helper-address
 
 Benefits:
-
 Centralized management
 Reduced administrative overhead
 Efficient IP allocation
 Easier scalability
-NAT -
+
+# NAT -
 Static Network Address Translation is configured on edge routers to allow communication between private enterprise networks and external networks.
 
 Features :
-
 Static NAT
 Inside Interfaces
 Outside Interfaces
 Public IP Mapping
 
 Benefits :
-
 Conserves public IP addresses
 Hides internal addressing
 Improves security
-Access Control Lists
 
+# Access Control Lists
 * ACLs are implemented to restrict unauthorized communication between selected departments.
 
 Implemented ACLs :
-
 Standard ACL
 Extended ACL
 
-Example Policies :
-
+ Example Policies :
 Restrict specific hosts
 Permit required traffic
 Block unauthorized inter-department access
 
-GRE Tunnel (VPN Simulation) :
+# GRE Tunnel (VPN Simulation) :
 A GRE tunnel is configured between enterprise routers to simulate secure communication across separate network segments.
 
 Benefits :
@@ -217,24 +215,24 @@ Secure logical connectivity
 Encapsulation of routed traffic
 Simulated site-to-site VPN
 
-****Enterprise Departments ****:
-1)Access Zone:
+# ****Enterprise Departments ****:
+# 1)Access Zone:
 Human Resources
 IT Department
 Training Department
 Development Department
 
-2)Core Operations
+# 2)Core Operations
 Finance
 Research & Development
 Enterprise Services
 
-3)Distribution Zone
+# 3)Distribution Zone
 Supply Chain
 Sales & Marketing
 Remote Operations
 
-***Network Features*** :
+# ***Network Features*** :
 Enterprise Multi-Zone Architecture
 Department-Based Segmentation
 Dynamic Routing
@@ -248,9 +246,8 @@ Centralized Services
 Enterprise Backbone
 High Availability Design
 
-Testing Performed :
+# Testing Performed :
 The network was validated using:
-
 End-to-End Ping
 Traceroute
 DHCP Lease Verification
@@ -262,7 +259,7 @@ NAT Translation Testing
 ACL Policy Verification
 GRE Tunnel Connectivity
 
-Skills Demonstrated :
+# Skills Demonstrated :
 Enterprise Network Design
 Cisco IOS Configuration
 IPv4 Addressing & Subnetting
@@ -277,7 +274,7 @@ Layer-3 Routing
 Network Troubleshooting
 Enterprise Documentation
 
-Future Enhancements :
+# Future Enhancements :
 VLAN Implementation
 Inter-VLAN Routing
 HSRP Gateway Redundancy
@@ -292,7 +289,7 @@ DNS Services
 QoS
 Firewall Policies
 
-Learning Outcomes :
+# Learning Outcomes :
 This project strengthened practical knowledge of:
 
 Enterprise network architecture
@@ -305,9 +302,9 @@ Network troubleshooting
 Infrastructure scalability
 Campus network design
 
-About the Author :
+# About the Author :
 
-Ramanand Patharwalkar
+# Ramanand Patharwalkar
 Bachelor of Engineering (Computer Engineering)
 PG-DAC (CDAC)
 Cisco Certified Network Associate (CCNA)
